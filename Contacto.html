@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Tortas de la Casa</title>
+  <link rel="icon" type="image/x-icon" href="img/logo.icon.ico">
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: #fff0f5;
+    }
+
+    main {
+      padding: 40px 0;
+    }
+
+    h2 {
+      color: #5a3e36; 
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .info-item i {
+      font-size: 30px;
+      color: #5a3e36; 
+      margin-bottom: 10px;
+    }
+
+    .form-faq {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    form button {
+      background: #e8004b;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .faq {
+      flex: 1;
+      text-align: left;
+    }
+
+    .faq h2 {
+      margin-bottom: 20px;
+      color: #5a3e36; 
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .faq h3 {
+      font-size: 18px;
+      color: #333;
+      margin: 0 0 8px 0;
+      text-align: justify;
+    }
+
+    .faq p {
+      font-size: 14px;
+      color: #666;
+      margin: 0;
+      text-align: justify;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header class="encabezado">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo">
+    </div>
+    <nav class="navegacion">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Tienda.html">Carta</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="barra-busqueda">
+      <input type="text" placeholder="Buscar..." />
+    </div>
+    <div class="iconos">
+      <span><i class="fa-regular fa-circle-user"></i></span>
+      <span><i class="fa-solid fa-cart-shopping"></i></span>
+      <span><i class="fa-brands fa-gratipay"></i></span>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Información de Contacto</h2>
+      <p style="margin-top: -15px; margin-bottom: 30px; color: #444;">
+        Ubícanos en los siguientes medios de contacto.
+      </p>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p><strong>Dirección</strong><br>Av. Los Incas 150, Villa El Salvador<br>Lima - Perú</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <p><strong>Teléfono</strong><br>(+51) 927 345 876</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <p><strong>Email</strong><br>tortasdelacasa@correo.com</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-calendar-alt"></i>
+          <p><strong>Horarios</strong><br>Lun - Dom: 9:00 AM a 8:00 PM</p>
+        </div>
+      </div>
+
+      <div class="form-faq">
+        <form>
+          <h2>Envíanos un mensaje</h2>
+          <input type="text" placeholder="Nombre y Apellidos" required />
+          <input type="email" placeholder="Correo electrónico" required />
+          <input type="tel" placeholder="Teléfono o celular" />
+          <input type="text" placeholder="Asunto" />
+          <textarea rows="5" placeholder="Mensaje"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+
+        <div class="faq">
+          <h2>Preguntas Frecuentes</h2>
+
+          <div class="faq-item">
+            <h3>¿Utilizan insumos naturales para la elaboración de sus productos?</h3>
+            <p>Sí, todos nuestros productos son preparados con insumos naturales y frescos de alta calidad.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>¿Cómo puedo ponerme en contacto con ustedes?</h3>
+            <p>Puede llamarnos o escribirnos a través del formulario o al correo electrónico indicado.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>¿Cómo puedo cancelar mi orden?</h3>
+            <p>Comuníquese con nosotros al menos 24 horas antes de la entrega para gestionar la cancelación.</p>
+          </div>
+        </div>
+      </div>
+
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.689119948053!2d-76.95249002404417!3d-12.152408545935248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6c1f2a245d5%3A0x26e7f647cc3de487!2sAv.%20Los%20Incas%2C%20Villa%20El%20Salvador!5e0!3m2!1ses-419!2spe!4v1656708574810!5m2!1ses-419!2spe"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="img/logo.png" alt="Logo" width="120" />
+      </div>
+      <div class="footer-info">
+        <p>© 2025 Tortas de la Casa Todos los derechos reservados.</p>
+        <p>Email: deliverytortasdelacasa@gmail.com<br />Tel: (51) 933 625 174</p>
+        <p>Horarios: Lunes a Domingo de 9am a 10pm <br /></p>
+      </div>
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.messenger.com" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-solid fa-book-open-cover"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
