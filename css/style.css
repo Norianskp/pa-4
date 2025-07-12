@@ -841,6 +841,61 @@ h6 {
 
 /** Nosotros.HTML**/
 
+.fundadores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.fundadores h1 {
+  margin-bottom: 20px;
+  color: #5c3b1e; /* marrón pastel */
+}
+
+.fundadores > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cuadro-img {
+  background-color: #fff8f0;
+  border: 3px solid #f8d7da;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-fundadora {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Opcional: mejora responsiva en pantallas más grandes */
+@media (min-width: 768px) {
+  .fundadores > div {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .fundadores h1 {
+    text-align: center;
+  }
+}
+
+
+
 .nosotros {
   padding: 40px 20px;
   background-color: #fff8f2;
@@ -861,7 +916,7 @@ h6 {
 }
 
 .video-nosotros {
-  margin-top: 40px;
+  margin-top: px;
 }
 
 .nosotros video {
